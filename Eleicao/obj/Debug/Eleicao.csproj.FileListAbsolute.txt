@@ -1,0 +1,7 @@
+C:\Users\Denner\Desktop\workSpace\trabalho-pratico-eleicao\Eleicao\bin\Debug\Eleicao.exe.config
+C:\Users\Denner\Desktop\workSpace\trabalho-pratico-eleicao\Eleicao\bin\Debug\Eleicao.exe
+C:\Users\Denner\Desktop\workSpace\trabalho-pratico-eleicao\Eleicao\bin\Debug\Eleicao.pdb
+C:\Users\Denner\Desktop\workSpace\trabalho-pratico-eleicao\Eleicao\obj\Debug\Eleicao.csprojAssemblyReference.cache
+C:\Users\Denner\Desktop\workSpace\trabalho-pratico-eleicao\Eleicao\obj\Debug\Eleicao.csproj.CoreCompileInputs.cache
+C:\Users\Denner\Desktop\workSpace\trabalho-pratico-eleicao\Eleicao\obj\Debug\Eleicao.exe
+C:\Users\Denner\Desktop\workSpace\trabalho-pratico-eleicao\Eleicao\obj\Debug\Eleicao.pdb
