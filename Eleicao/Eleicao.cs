@@ -177,7 +177,8 @@ namespace Eleicao
                 foreach (Candidato candidato in candidatos)
                     Console.WriteLine("Candidato: " + candidato.nome + " | Numero: " + candidato.numero);
 
-                Console.WriteLine("Digite o voto do " + i + " eleitor");
+                Console.WriteLine();
+                Console.WriteLine("Digite o voto do " + i + "° eleitor");
                 voto = int.Parse(Console.ReadLine());
 
                 eleicao.atribuirVotos(eleicao, candidatos, voto);
