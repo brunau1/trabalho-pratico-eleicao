@@ -59,6 +59,7 @@ namespace Eleicao
         public void atribuirVotos(Eleicao eleicao, Candidato[] candidatos, int voto)
         {
             int contNulo = 0;
+
             if (voto == 0)
                 eleicao.votosBranco++;
             else
@@ -119,7 +120,7 @@ namespace Eleicao
                             contVencedor++;
             }
 
-            Candidato[] candidatoV = new Candidato[contVencedor];
+            Candidato[] candidatosV = new Candidato[contVencedor];
 
             //se tiver apenas um vencedor
             if (contVencedor == 1)
@@ -128,8 +129,8 @@ namespace Eleicao
                     //verifica quem venceu de acordo com o nome
                     if (candidato.nome == vencedor)
                     {
-                        candidatoV[0] = candidato;
-                        return candidatoV;
+                        candidatosV[0] = candidato;
+                        return candidatosV;
                     }
             }
             //se houve mais de um vencedor ( empate )
@@ -138,10 +139,10 @@ namespace Eleicao
                     if (candidatos[i].qtdVotos == maior)
                         if (candidatos[i].getIdade() == maiorIdade)
                             //adiciona ao array temporario os candidatos empatados
-                            candidatoV[i] = candidatos[i];
+                            candidatosV[i] = candidatos[i];
 
             //retorna um array com os candidatos empatados
-            return candidatoV;
+            return candidatosV;
         }
 
         //mostra os resultados da eleição
@@ -173,6 +174,9 @@ namespace Eleicao
             for (int i = 1; i <= eleicao.qtdEleitores; i++)
             {
                 Console.Clear();
+                foreach (Candidato candidato in candidatos)
+                    Console.WriteLine("Candidato: " + candidato.nome + " | Numero: " + candidato.numero);
+
                 Console.WriteLine("Digite o voto do " + i + " eleitor");
                 voto = int.Parse(Console.ReadLine());
 
@@ -196,6 +200,7 @@ namespace Eleicao
                 Console.WriteLine("Nova eleicao deve ser realizada");
                 Console.WriteLine();
                 eleicao.mostraResultado(vencedor, eleicao, candidatos);
+                Console.WriteLine();
                 Console.WriteLine("Clique em qualquer tecla para votar novamente");
                 Console.ReadKey();
                 eleicao.votosBranco = 0;
